@@ -5823,7 +5823,6 @@ function loadTableData() {
 
 loadTableData();
 
-
 // Create filter function to filter by location when radio button is clicked or else display park type by calling the previous parktype function
 let filterByLocation = document.getElementById("filterByLocation");
 
@@ -5866,9 +5865,8 @@ function filterByState() {
   }
 }
 
-
 // Create filter function to filter by parktypeand match it with the parksdropdown value. Then we called the filter on the select element
-
+let byParkTypeRadio = document.getElementById("byParkTypeRadio")
 function filterByParkType() {
   let parkIdValue = parksDropdown.value;
   let filterTypes = nationalParksArray.filter((parkName) => parkName.LocationName.includes(parkIdValue));
@@ -5890,5 +5888,14 @@ function filterByParkType() {
 
     let tableData5 = tableRow.insertCell();
     tableData5.innerText = nationalpark.Visit || " N/A";
+  }
+}
+
+function filter() {
+  if (filterByLocation.checked) {
+    filterByState();
+  }
+  if (byParkTypeRadio.checked) {
+    filterByParkType();
   }
 }

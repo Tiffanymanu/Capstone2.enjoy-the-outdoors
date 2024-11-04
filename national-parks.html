@@ -17,9 +17,9 @@
 
       <input type="radio" id="filterByLocation" name="filterOption" onchange="filterTypeChanged()" />
       <label for="filterByLocation"> Location </label>
-      <input type="radio" id="filterByParkType" name="filterOption" onchange="filterTypeChanged()" />
-      <label for="filterByParkType">Park Type </label>
-      <select id="parksDropdown" onchange="filterByState()">
+      <input type="radio" id="byParkTypeRadio" name="filterOption" onchange="filterTypeChanged()" />
+      <label for="byParkTypeRadio">Park Type </label>
+      <select id="parksDropdown" onchange="filter()">
         <option value="">Select...</option>
       </select>
       <table>
