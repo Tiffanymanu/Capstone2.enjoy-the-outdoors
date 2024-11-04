@@ -7,13 +7,45 @@
     <title>Document</title>
   </head>
   <body>
+    <nav class="nav">
+      <a class="nav-link" href="./index.html">Home</a>
+      <a class="nav-link" href="/mountains.html">Mountains</a>
+    </nav>
     <main>
       <h1>National Parks</h1>
-    </main>
-    <script src="scripts/locationData.js"></script>
-    <script src="scripts/parkTypeData.js"></script>
-    <script src="scripts/nationalParkData.js"></script>
+      <p>Filter By</p>
 
-    <script src="scripts/national-parks.js"></script>
+      <input type="radio" id="filterByLocation" name="filterOption" onchange="filterTypeChanged()" />
+      <label for="filterByLocation"> Location </label>
+      <input type="radio" id="filterByParkType" name="filterOption" onchange="filterTypeChanged()" />
+      <label for="filterByParkType">Park Type </label>
+      <select id="parksDropdown" onchange="filterByState()">
+        <option value="">Select...</option>
+      </select>
+      <table>
+        <thead>
+          <tr>
+            <th>Location Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Website</th>
+          </tr>
+        </thead>
+        <tbody id="parksTBody">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <script src="scripts/locationData.js"></script>
+      <script src="scripts/parkTypeData.js"></script>
+      <script src="scripts/nationalParkData.js"></script>
+
+      <script src="scripts/national-parks.js"></script>
+    </main>
   </body>
 </html>

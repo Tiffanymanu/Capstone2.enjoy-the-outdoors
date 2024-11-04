@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
     <title>Mountains</title>
   </head>
   <body>
+    <a class="nav-link" href="./index.html">Home</a>
+    <a class="nav-link" href="national-parks.html">National Parks</a>
     <main>
       <h1>Mountains</h1>
+      <h2>Select a Mountain</h2>
+      <article>
+        <label for="mountainsDropdown"></label>
+        <select id="mountainsDropdown">
+          <option value="">Select...</option>
+        </select>
+        <p id="mountainDetailsParagraph"></p>
+      </article>
     </main>
     <script src="scripts/mountainData.js"></script>
     <script src="scripts/mountains.js"></script>
