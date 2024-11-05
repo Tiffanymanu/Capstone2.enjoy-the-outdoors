@@ -528,17 +528,3 @@ const mountainsArray = [
     },
   },
 ];
-
-const mountainsDropdown = document.getElementById("mountainsDropdown");
-const mountainDetailsParagraph = document.getElementById("mountainDetailsParagraph");
-
-function loadMountains() { 
-    for (const mountain of mountainsArray) {
-        let option = document.createElement("option");
-        option.textContent = mountain.name;
-        // option.value = team.code;
-        mountainsDropdown.appendChild(option);
-      }
-
-} 
- loadMountains();

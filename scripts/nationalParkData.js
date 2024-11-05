@@ -5823,7 +5823,7 @@ function loadTableData() {
 
 loadTableData();
 
-// Create filter function to filter by location when radio button is clicked or else display park type by calling the previous parktype function
+
 let filterByLocation = document.getElementById("filterByLocation");
 
 function filterTypeChanged() {

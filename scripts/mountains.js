@@ -1,7 +1,27 @@
 "use strict";
+// Get Elements by ID
+const mountainsDropdown = document.getElementById("mountainsDropdown");
+const mountainDetailsParagraph = document.getElementById("mountainDetailsParagraph");
+// const mountainDetailsButton = document.getElementById("mountainDetailsButton");
 
-function loadMountains(params) {
+// create a function to display the array values as options in the dropdown
+function loadMountains() {
   for (const mountain of mountainsArray) {
-    console.log(mountain);
+    let option = document.createElement("option");
+    option.textContent = mountain.name;
+    option.value = mountain.name;
+    mountainsDropdown.appendChild(option);
+  }
+}
+loadMountains();
+
+//  Create a function to show the details when each mountain name is clicked
+function showMountainDetails() {
+  const mountainName = mountainsDropdown.value;
+  for (const mountain of mountainsArray) {
+    if (mountain.name == mountainName) {
+      const details = `Welcome to ${mountain.name} ! (${mountain.desc} Effort: ${mountain.effort}` ;
+      mountainDetailsParagraph.innerText = details;
+    }
   }
 }
