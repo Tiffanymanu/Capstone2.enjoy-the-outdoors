@@ -8,19 +8,55 @@
     <title>Mountains</title>
   </head>
   <body>
-    <a class="nav-link" href="./index.html">Home</a>
-    <a class="nav-link" href="national-parks.html">National Parks</a>
-    <main>
+    <nav class="nav">
+      <a class="nav-link" href="./index.html">Home</a>
+      <a class="nav-link" href="national-parks.html">National Parks</a>
+    </nav>
+    <main class="container mt-4">
       <h1>Mountains</h1>
-      <h2>Select a Mountain</h2>
+      <br />
+      <h2>Take a Peek at the Peaks!</h2>
       <article>
         <label for="mountainsDropdown"></label>
         <select id="mountainsDropdown" onchange="showMountainDetails()">
           <option value="">Select...</option>
         </select>
         <!-- <button type="button" id="mountainDetailsButton" onclick="showMountainDetails()">Show Details</button> -->
-        <p id="mountainDetailsParagraph"></p>
       </article>
+      <br />
+      <div class="d-flex justify-content-center">
+        <div id="mountainDeatilsDiv" class="card" style="width: 20rem">
+          <img id="logoImage" src="./images/aa1.jpg" class="card-img-top img-fluid" alt="logo" height=" " />
+          <div class="card-body">
+            <h5 id="cardTitleHeading" class="card-title">Welcome &#127794;</h5>
+            <div class="card-text">
+              <p id="mountainDetailsParagraph"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+      <!-- <h1>Mountains</h1>
+      <br />
+      <h2>Take a Peek at the Peaks!</h2>
+      <article>
+        <label for="mountainsDropdown"></label>
+        <select id="mountainsDropdown" onchange="showMountainDetails()">
+          <option value="">Select...</option>
+        </select>
+      
+      </article> 
+      <br>
+      <div id="mountainDeatilsDiv" class="card " style="width: 20rem"  >
+        <img id="logoImage" src="./images/aa1.jpg" class="card-img-top img-fluid" alt="logo" />
+        <div class="card-body">
+          <h5 id="cardTitleHeading" class="card-title">Welcome &#127794;</h5>
+          <div class="card-text"> 
+            <p id="mountainDetailsParagraph"></p>
+          </div>
+        </div>
+      </div> -->
     </main>
     <script src="scripts/mountainData.js"></script>
     <script src="scripts/mountains.js"></script>

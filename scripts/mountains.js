@@ -2,6 +2,8 @@
 // Get Elements by ID
 const mountainsDropdown = document.getElementById("mountainsDropdown");
 const mountainDetailsParagraph = document.getElementById("mountainDetailsParagraph");
+const logoImage = document.getElementById("logoImage"); 
+const cardTitleHeading = document.getElementById("cardTitleHeading");
 // const mountainDetailsButton = document.getElementById("mountainDetailsButton");
 
 // create a function to display the array values as options in the dropdown
@@ -20,8 +22,11 @@ function showMountainDetails() {
   const mountainName = mountainsDropdown.value;
   for (const mountain of mountainsArray) {
     if (mountain.name == mountainName) {
-      const details = `Welcome to ${mountain.name} ! (${mountain.desc} Effort: ${mountain.effort}` ;
+      logoImage.src = `./images/${mountain.img}`;
+        cardTitleHeading.innerText = `Welcome to ${mountain.name} !`;
+      const details = ` ${mountain.desc} Effort: ${mountain.effort}` ;
       mountainDetailsParagraph.innerText = details;
     }
   }
 }
+
