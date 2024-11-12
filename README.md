@@ -45,14 +45,14 @@ Welcome to Navigating Nature a site that provides information on national parks 
     1. Select a mountain from the dropdown menu
     2. Once mountain is selected details will be displayed including an image, description, elevation and effort level
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/245443cc-80a3-4805-bcf5-68c0cecad750/66ff21ed-434a-467f-876c-99b27b4ed64b/image.png)
+![image (1)](https://github.com/user-attachments/assets/b5422a20-7705-4a76-9b7e-3d1e1332e427)
+
 
 ### National Parks Page
 
 1. Choose a filter option whether park type or location. 
 2. Select an option from the dropdown to filter the parks. Table will populate parks that meet the criteria along with details
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/245443cc-80a3-4805-bcf5-68c0cecad750/62eeb39d-e264-43a6-b6f9-221d46c8b6da/image.png)
+![Capture](https://github.com/user-attachments/assets/80734d1b-d4d1-4344-b262-1bd8b0cfabc4)
 
 # Resources
 
